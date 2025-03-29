@@ -8,10 +8,10 @@ export interface StudySessionType {
 }
 
 export interface StudySessionContextType {
-    sessions: StudySessions
-    addSessions: (session: StudySessionType) => void
-    removeSessions: (session: StudySessionType) => void
-    updateSessions: (session: StudySessionType) => void
+    studySessions: StudySessions
+    addSession: (session: StudySessionType) => void
+    removeSession: (id: number) => void
+    updateSession: (session: StudySessionType) => void
 }
 
 export type StudySessions = StudySessionType[];
